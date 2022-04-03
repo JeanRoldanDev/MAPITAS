@@ -16,18 +16,10 @@ on:
         required: false
         type: string
         default: "2.10.3"
-      working_directory:
-        required: true
-        type: string
-        default: "./"
 
 jobs:
   build:
-    defaults:
-      run:
-        working-directory: ${{ inputs.working_directory }}
     runs-on: ubuntu-latest
-
     steps:
       - name: 📚 Git Checkout
         uses: actions/checkout@v2
