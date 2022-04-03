@@ -2,8 +2,8 @@ name: mapitas
 
 on:
   push:
-    braches:
-      - main
+    branches:
+      - "main"
   pull_request:
 
   workflow_call:
