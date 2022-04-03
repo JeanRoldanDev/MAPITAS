@@ -2,23 +2,14 @@ name: mapitas
 
 on:
   push:
-    branches:
-      - "main"
+    branches: [master]
   pull_request:
-
-  workflow_call:
-    inputs:
-      flutter_channel:
-        required: false
-        type: string
-        default: "stable"
-      flutter_version:
-        required: false
-        type: string
-        default: "2.10.3"
 
 jobs:
   build:
+    defaults:
+      run:
+        working-directory: "."
     runs-on: ubuntu-latest
     steps:
       - name: 📚 Git Checkout
@@ -27,8 +18,8 @@ jobs:
       - name: 🐦 Setup Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: ${{ inputs.flutter_version }}
-          channel: ${{ inputs.flutter_channel }}
+          flutter-version: "2.10.3"
+          channel: "stable"
           cache: true
 
       - name: 📦 Install Dependencies
