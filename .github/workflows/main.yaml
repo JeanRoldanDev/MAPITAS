@@ -3,14 +3,11 @@ name: mapitas
 on:
   push:
     branches:
-      - "master"
+      - "main"
   pull_request:
 
 jobs:
   build:
-    defaults:
-      run:
-        working-directory: "."
     runs-on: ubuntu-latest
     steps:
       - name: 📚 Git Checkout
