@@ -3,6 +3,8 @@
    <application
         android:label="${appName}"
         android:icon="@mipmap/ic_launcher">
+        <meta-data android:name="com.mapbox.token"
+            android:value="sk.eyJ1IjoiamVhbnJvbGRhbmRldiIsImEiOiJjbDFqdXU1NHMyOHR3M2JsZzd3aDV3aWl1In0.tBpcAKPZm4xyPzLR3ekEzQ"/>
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"

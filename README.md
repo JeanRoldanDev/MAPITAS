@@ -12,7 +12,8 @@ Up to what point?
 |       VS         |     GOOGLE MAPS      |       MAPBOX       |
 |     ------       |        ------        |       -----        | 
 | Support Oficial  | :heavy_check_mark:   | :x:                |
-
+| version stable   | :heavy_check_mark:   | :x:                |
+| version stable   | :heavy_check_mark:   | :x:                |
 
 
 
