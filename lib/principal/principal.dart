@@ -1,15 +1,23 @@
 import 'package:flutter/material.dart';
 
-class Principal extends StatefulWidget {
-  Principal({Key? key}) : super(key: key);
+class Principal extends StatelessWidget {
+  const Principal({
+    Key? key,
+  }) : super(key: key);
 
-  @override
-  State<Principal> createState() => _PrincipalState();
-}
-
-class _PrincipalState extends State<Principal> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('GooogleMaps VS Mapbox'),
+      ),
+      body: ListView(
+        children: const [
+          ListTile(
+            title: Text('polyline'),
+          )
+        ],
+      ),
+    );
   }
 }
